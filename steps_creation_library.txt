@@ -68,6 +68,7 @@ of Git (getting used to it and practice collaboration among teams). The actual r
 the appropriateness of the split, etc. are not going to be evaluated.
 
 # Update in github
+## You must be in the folder hw4
 git add .
 git commit -m "Adding files for functions"
 git pull origin main
