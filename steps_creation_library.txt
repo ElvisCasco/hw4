@@ -1,0 +1,74 @@
+# Create folder an virtual environment
+mkdir process_data
+cd process_data
+uv venv
+
+# Add .toml and README.md files
+
+New-Item -Path pyproject.toml -ItemType File
+New-Item -Path README.md -ItemType File
+New-Item -Path LICENSE -ItemType File
+
+mkdir src
+cd src
+
+
+
+# Add files with functions
+## a. Load the data.
+
+mkdir process_data
+cd process_data
+
+New-Item -Path .\__init__.py -ItemType File
+New-Item -Path .\data_loader.py -ItemType File
+
+## b. Split the data between train and test. (you can use train_test_split from sklearn or any other
+way)
+
+New-Item -Path .\data_split.py -ItemType File
+
+## c. Remove those rows that contain NaN values in the columns: age, gender, ethnicity.
+
+New-Item -Path .\data_remove_nans.py -ItemType File
+
+## d. Fill NaN with the mean value of the column in the columns: height, weight.
+
+New-Item -Path .\data_fill_nans.py -ItemType File
+
+## e. Generate dummies for ethnicity column (One hot encoding).
+
+New-Item -Path .\data_encoding.py -ItemType File
+
+## f. Create a binary variable for gender M/F.
+
+New-Item -Path .\data_binary.py -ItemType File
+
+## g. Train a model (for instance LogisticRegression or RandomForestClassifier from sklearn) in the
+train data. Use as features the columns: ‘age’, ‘height’, ‘weight’, ‘aids’, ‘cirrhosis’, ‘hepatic_failure’,
+‘immunosuppression’, ‘leukemia’, ‘lymphoma’, ‘solid_tumor_with_metastasis’. Use as target the
+column: ‘diabetes_mellitus’
+
+New-Item -Path .\data_train_models.py -ItemType File
+
+## h. Predict the targets for both the train and test sets and add the prediction as a new column (use
+predict_proba from the model to get the predicted probabilities) name the new column something
+like predictions.
+
+New-Item -Path .\data_predict.py -ItemType File
+
+## i. Compute the train and test roc_auc metric using roc_auc_score from sklearn.
+
+New-Item -Path .\data_metrics.py -ItemType File
+
+7. Create a notebook that imports the functions and executes the previous steps in order to compute the
+metrics. Notice that the purpose of the exercise is to practice programming skills (specially regarding
+functions usage, DRY, code readability and best practices), the creation of a python library and the use
+of Git (getting used to it and practice collaboration among teams). The actual results on the metric,
+the appropriateness of the split, etc. are not going to be evaluated.
+
+# Update in github
+git add .
+git commit -m "Adding files for functions"
+git pull origin main
+git push origin main
