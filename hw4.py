@@ -7,6 +7,20 @@
 #  "Hakuna matata", "Timon, Pumba and Simba are friends, but Simba could eat the other two."] 
 #
 
+def count_simba(list):
+    count = 0
+    for item in list:
+        count += item.count("Simba")
+    return count
+
+list = ["Simba and Nala are lions.", 
+              "I laugh in the face of danger.", 
+              "Hakuna matata", 
+              "Timon, Pumba and Simba are friends, but Simba could eat the other two."] 
+
+print(count_simba(list))
+    
+
 # 2)
 # Create a function called "get_day_month_year" that takes 
 # a list of datetimes.date and returns a pandas dataframe
