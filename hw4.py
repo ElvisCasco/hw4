@@ -29,6 +29,24 @@ print(count_simba(list))
 # day, month, and year.
 # 
 
+import pandas as pd
+
+def get_day_month_year(date_list):
+    days = []
+    months = []
+    years = []
+    for date in date_list:
+        days.append(date.day)
+        months.append(date.month)
+        years.append(date.year)
+        df = pd.DataFrame({'day': days, 'month': months, 'year': years})
+    return df
+
+dates = [["22","05","1992"],["25","05","1958"],["06","22","1961"],["08","04","1995"]]
+
+print(get_day_month_year(dates))
+
+
 # 3) 
 # Create a function called "compute_distance" that takes
 # a list of tuple pairs with latitude and longitude coordinates and 
