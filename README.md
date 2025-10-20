@@ -18,20 +18,35 @@ All the functions to operate the library are in the folder process_data; this fo
 The structure of the folder is:
 
 │   └── process_data
+
 │       ├── LICENSE
+
 │       ├── README.md
+
 │       ├── pyproject.toml
+
 │       └── src
+
 │           └── process_data
+
 │               ├── __init__.py
+
 │               ├── data_binary.py
+
 │               ├── data_encoding.py
+
 │               ├── data_fill_nans.py
+
 │               ├── data_loader.py
+
 │               ├── data_metrics.py
+
 │               ├── data_predict.py
+
 │               ├── data_remove_nans.py
+
 │               ├── data_split.py
+
 │               └── data_train_models.py
 
 a. `data_loader.py`: Loads the data.
