@@ -1,0 +1,33 @@
+.
+├── LICENSE
+├── README.md
+├── ejercicio0.ipynb
+├── exercise6.ipynb
+├── hw4.py
+├── hw4_instructions.pdf
+├── hw4_solutions.py
+├── main.py
+├── process_data
+│   └── process_data
+│       ├── LICENSE
+│       ├── README.md
+│       ├── pyproject.toml
+│       └── src
+│           └── process_data
+│               ├── __init__.py
+│               ├── data_binary.py
+│               ├── data_encoding.py
+│               ├── data_fill_nans.py
+│               ├── data_loader.py
+│               ├── data_metrics.py
+│               ├── data_predict.py
+│               ├── data_remove_nans.py
+│               ├── data_split.py
+│               └── data_train_models.py
+├── pyproject.toml
+├── sample_diabetes_mellitus_data.csv
+├── steps_creation_library.txt
+├── structure.txt
+└── uv.lock
+
+5 directories, 26 files
