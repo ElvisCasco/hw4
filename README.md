@@ -15,39 +15,7 @@ This repository creates a library to do the following steps (using a `.py` file,
 
 All the functions to operate the library are in the folder process_data; this folder contains the structure to operate all functions inside a library called "process_data".
 
-The structure of the folder is:
-
-│   └── process_data
-
-│       ├── LICENSE
-
-│       ├── README.md
-
-│       ├── pyproject.toml
-
-│       └── src
-
-│           └── process_data
-
-│               ├── __init__.py
-
-│               ├── data_binary.py
-
-│               ├── data_encoding.py
-
-│               ├── data_fill_nans.py
-
-│               ├── data_loader.py
-
-│               ├── data_metrics.py
-
-│               ├── data_predict.py
-
-│               ├── data_remove_nans.py
-
-│               ├── data_split.py
-
-│               └── data_train_models.py
+The structure of the library can be seen in the file `library_structure.txt`.
 
 a. `data_loader.py`: Loads the data.
 
