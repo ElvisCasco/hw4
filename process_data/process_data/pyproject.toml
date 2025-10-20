@@ -1,0 +1,21 @@
+[project]
+name = "process_data"
+version = "0.1.0"
+description = "A data processing library"
+authors = [{ name = "Group_Computing", email = "ecasco1@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "pandas>=2.3.3",
+    "numpy>=2.3.2",
+    "scikit-learn>=1.7.2"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["process_data"]
+package-dir = {"" = "src"}
