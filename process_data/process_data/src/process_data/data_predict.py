@@ -2,7 +2,7 @@
 def data_logistic_model(file_name):
      # Get the logistic regression model using training data 
      train,test=data_binary(file_name)
-     from sklearn.linear_model import LogisticRegression
+     #from sklearn.linear_model import LogisticRegression
      features = [
          'age', 'height', 'weight', 'aids', 'cirrhosis',
           'hepatic_failure','immunosuppression', 'leukemia', 
