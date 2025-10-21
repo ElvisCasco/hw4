@@ -1,6 +1,6 @@
 
 def pred_auc_score(file_name):
-     from sklearn.metrics import roc_auc_score, accuracy_score
+     #from sklearn.metrics import roc_auc_score, accuracy_score
      train,test=data_predict(file_name)
      # Evaluate performance
      y_train = train['diabetes_mellitus']
