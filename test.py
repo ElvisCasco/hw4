@@ -5,4 +5,3 @@ from process_data import *
 
 data = process_data.load_data(file_name)
 print(data)
-git 
