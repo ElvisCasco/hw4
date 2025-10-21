@@ -1,11 +1,11 @@
-from data_loader import *
-from data_split import *
-from data_remove_nans import *
-from data_fill_nans import *
-from data_encoding import *
-from data_binary import *
-from data_predict import *
-from pred_auc_score import *
+from .data_loader import *
+from .data_split import *
+from .data_remove_nans import *
+from .data_fill_nans import *
+from .data_encoding import *
+from .data_binary import *
+from .data_predict import *
+from .pred_auc_score import *
 
 __all__ = [
     "data_loader",
